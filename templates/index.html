@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addiction Risk Prediction</title>
+</head>
+<body>
+    <h1>Addiction Risk Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="DRD2">DRD2:</label>
+        <input type="text" id="DRD2" name="DRD2" required><br><br>
+
+        <label for="OPRM1">OPRM1:</label>
+        <input type="text" id="OPRM1" name="OPRM1" required><br><br>
+
+        <label for="SLC6A4">SLC6A4:</label>
+        <input type="text" id="SLC6A4" name="SLC6A4" required><br><br>
+
+        <label for="COMT">COMT:</label>
+        <input type="text" id="COMT" name="COMT" required><br><br>
+
+        <label for="MAOA">MAOA:</label>
+        <input type="text" id="MAOA" name="MAOA" required><br><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" required><br><br>
+
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
